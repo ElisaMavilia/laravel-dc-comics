@@ -19,8 +19,17 @@
                 Price: {{$comic->price}}
             </div>
             <div>
-    
+
             </div>
             <div>
+            </div>
+            <form action="{{ route('comics.destroy', $comic->id) }}" method="POST" class="d-inline">
+                @csrf
+                @method('DELETE')
+                <input type="submit" value="Delete" class="btn btn-danger mt-5" id="comicDelete">
+            </form>
+        </div>
+    </div>
+    </div>
+</section>
 @endsection
-              
