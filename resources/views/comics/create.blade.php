@@ -6,7 +6,7 @@
 
 <form action="{{route('comics.store')}}" method="POST">
         @csrf
-        <div class="container mb-3">
+        <div class="container mb-3 mt-4">
             <label for="title" class="form-label">Title</label>
             <input type="text" class="form-control @error('title') is-invalid @enderror" id="title" aria-describedby="titleHelp" name="title" value="{{old('title')}}">
             @error('title')
@@ -59,7 +59,10 @@
                 <div class="alert alert-danger">{{ $message }}</div>
             @enderror
           </div>
-        <button type="submit" class="btn btn-primary">Create</button>
+          <div class="container mt-3">
+          <button type="submit" class="btn btn-primary">Create</button>
+          </div>
+        
        
     </form>
     @endsection
