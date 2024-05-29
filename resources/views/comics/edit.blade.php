@@ -4,7 +4,7 @@
 
 @section('content')
 
-<form action="{{route('comics.update', $comic->id)}}" method="POST">
+<form class="mt-4" action="{{route('comics.update', $comic->id)}}" method="POST">
         @csrf
         @method('PUT')
         <div class="container mb-3">
