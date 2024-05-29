@@ -23,6 +23,7 @@
             </div>
             <div>
             </div>
+            <a href="{{route('comics.edit', $comic->id )}}" class="btn btn-primary">Edit</a>
             <form action="{{ route('comics.destroy', $comic->id) }}" method="POST" class="d-inline">
                 @csrf
                 @method('DELETE')

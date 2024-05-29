@@ -42,6 +42,6 @@
             </select>
           </div>
         <button type="submit" class="btn btn-primary">Create</button>
-        <button type="reset" class="btn btn-danger">Cancel</button>
+       
     </form>
     @endsection
